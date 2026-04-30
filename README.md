@@ -1,18 +1,28 @@
-# React + Vite
+# Voting Poll App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React mini-project built with Vite and Tailwind CSS
 
-Currently, two official plugins are available:
+## Features
+- Add custom poll option
+- Vote on an option(one vote only)
+- Live vote count and percentage progress bar
+- Data persists across page refreshes using localstorage
+- Reset all votes withone click
+- Fully responsive on mobile and desktop
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Setup Steps
+1. Clone the repository
+git clone git@github.com:adisacodes/voting-poll-app.git
 
-## React Compiler
+2. Navigate into the project folder
+cd voting-poll-app
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+3. Install dependencies
+npm install
 
-Note: This will impact Vite dev & build performances.
+4. Run the development server
+npm run dev
 
-## Expanding the ESLint configuration
+5. Open your browser and go to
+http://localhost:5173
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
