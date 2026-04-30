@@ -12,9 +12,20 @@ function PollOption({ option, onVote, hasVoted, totalVotes }) {
                     style={{ width: `${percentage}%` }}
                 />
                 </div>
-                
+             <div className="flex justify-between items-center">
+                <span className="text-sm text-gray-500">{percentage}%</span>
+                <button
+                    onClick={() => onVote(option.id)}
+                    disabled={hasVoted}
+                    className="bg-green-500 text-white px-4 py-1 rounded hover:bg-green-600 disabled:opcity-50 disabled:cursor-not-allowed"
+                >
+                    Vote
+                </button>
+             </div>
             </div>
-        </div>
+    
     )
 
 } 
+
+export default PollOption
